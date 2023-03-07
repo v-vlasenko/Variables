@@ -20,7 +20,7 @@ resource "random_pet" "pet" {
   }
 }
 resource "random_shuffle" "my_shuffle" {
-  input = var.strings[3]
+  input = var.strings
   result_count = length(var.strings)
 }
 resource "random_id" "my_id" {

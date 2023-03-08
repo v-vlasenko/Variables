@@ -1,0 +1,3 @@
+variable "quantity" {
+type = string	
+}

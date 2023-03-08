@@ -1,3 +1,3 @@
 variable "quantity" {
-type = string	
+type = numeric	
 }

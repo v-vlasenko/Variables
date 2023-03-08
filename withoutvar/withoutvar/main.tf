@@ -4,3 +4,6 @@ resource "null_resource" "test" {
     trigger = timestamp()
   }
 }
+variable "quantity" {
+  default = 1
+}

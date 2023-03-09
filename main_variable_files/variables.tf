@@ -1,6 +1,6 @@
 variable "quantity" {
 	default = 2
-	type = number
+	type = string
 }
 variable "prefix" {
 	default = ["Mr", "Mrs", "Sir"]

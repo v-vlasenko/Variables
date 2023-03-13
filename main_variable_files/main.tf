@@ -7,7 +7,7 @@ resource "random_integer" "ran" {
   }
 }
 resource "random_pet" "pet" {
- prefix = var.prefix[2]
+ prefix = var.prefix[1]
  separator = "."
  length = 1
  }

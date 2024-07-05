@@ -6,7 +6,7 @@ resource "random_pet" "pet" {
 variable "prefix" {
   type        = string
   description = "What fruit to pick?"
-  default     = "appl"
+  default     = "apple"
 
   validation {
     condition     = can(regex("^(lemon|apple|mango|banana|cherry)$", var.prefix))

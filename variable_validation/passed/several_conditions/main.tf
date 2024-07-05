@@ -5,7 +5,7 @@ resource "random_pet" "pet" {
  }
 
 variable "prefix" {
-  default = "MS1"
+  default = "MMMMMMMS1@"
   type        = string
   description = "The prefix used for the GCP projects"
 
@@ -17,7 +17,7 @@ variable "prefix" {
   }
 
   validation {
-    condition     = length(var.prefix) > 2 && ength(var.prefix) <= 6
+    condition     = length(var.prefix) > 2 && length(var.prefix) <= 6
     # Not allowed due to the use of a variable:
     # error_message = "Invalid value [${var.prefix}]. The prefix value should contain at least 3 characters and can not contain more than 6 characters"
     error_message = "The prefix value should contain at least 3 characters and can not contain more than 6 characters"

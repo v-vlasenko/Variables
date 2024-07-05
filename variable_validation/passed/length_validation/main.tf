@@ -33,3 +33,4 @@ validation {
     condition     = length(var.long) <= 3
     error_message = "Err: prefix is too long."
   }
+}

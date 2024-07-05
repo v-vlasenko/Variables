@@ -5,13 +5,17 @@ variable "rules" {
   }))
 default = [
     {
-      name = "unicorn"
+      name = "pet"
       access = "Deny"
     }
 ]
 
   validation {
     condition = contains(["Allow", "Deny"], var.rules[0].access)
+    error_message = "Invalid access, can be either Allow or Deny."
+  }
+ validation {
+    condition = contains(["cat", "pet"], var.rules[0].name)
     error_message = "Invalid access, can be either Allow or Deny."
   }
 }

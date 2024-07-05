@@ -12,7 +12,7 @@ variable "prefix" {
     condition = contains(
       ["lemon", "cherry", "apple", "banana", "mango"],
       var.prefix
-    )
+    ) || ""
     error_message = "Err: prefix is not valid."
   }
 }

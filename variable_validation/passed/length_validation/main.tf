@@ -27,7 +27,7 @@ resource "random_password" "password" {
 variable "long" {
   type        = string
   description = "What length?"
-  default = "8"
+  default = "88888888888888888"
 
 validation {
     condition     = length(var.long) <= 7

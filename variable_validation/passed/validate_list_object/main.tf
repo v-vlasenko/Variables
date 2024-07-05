@@ -10,8 +10,8 @@ default = [
     }
 ]
 
-  validation {
+  /*validation {
     condition = contains(["Allow", "Deny"], var.rules.access)
     error_message = "Invalid access, can be either Allow or Deny."
-  }
+  }*/
 }

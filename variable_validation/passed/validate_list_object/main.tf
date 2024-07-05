@@ -11,7 +11,7 @@ default = [
 ]
 
   validation {
-    condition = contains(["Allow", "Deny"], var.rules.access)
+    condition = contains(["Allow", "Deny"], var.rules[0].access)
     error_message = "Invalid access, can be either Allow or Deny."
   }
 }

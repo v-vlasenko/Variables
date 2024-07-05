@@ -12,10 +12,10 @@ default = [
 
   validation {
     condition = contains(["Allow", "Deny"], var.rules[0].access)
-    error_message = "Invalid access, can be either Allow or Deny.Invalid access, can be either Allow or Deny.Invalid access, can be either Allow or Deny.Invalid access, can be either Allow or Deny."
+    error_message = "Invalid access, can be either Allow or Deny."
   }
  validation {
     condition = contains(["cat", "pet"], var.rules[0].name)
-    error_message = "Invalid name, can be either cat or pet.Invalid name, can be either cat or pet.Invalid name, can be either cat or pet.Invalid name, can be either cat or pet."
+    error_message = "Invalid name, can be either cat or pet."
   }
 }

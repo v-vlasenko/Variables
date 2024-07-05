@@ -11,6 +11,6 @@ default = 5
 
   validation {
     condition     = sin(var.pass_count) > 5
-    error_message = "nope"
+    error_message = "bla bla bla"
   }
 }

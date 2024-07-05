@@ -3,6 +3,11 @@ variable "rules" {
     name = string
     access = string
   }))
+default = [
+    {
+      name        = "unicorn"
+      access = "Deny"
+    },
 
   validation {
     condition = contains(["Allow", "Deny"], var.rules.access)

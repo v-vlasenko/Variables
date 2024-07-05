@@ -1,12 +1,12 @@
 resource "random_pet" "pet" {
  prefix = var.prefix
  separator = "."
+ length = 5
  }
 variable "prefix" {
   type        = string
   description = "What fruit to pick?"
   default = "lemon"
-  length = 5
 
 validation {
     condition     = length(var.prefix) <= 3

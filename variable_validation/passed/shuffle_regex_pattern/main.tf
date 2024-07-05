@@ -1,6 +1,6 @@
 resource "random_shuffle" "my_shuffle" {
   input = var.fruit
-  result_count = length(var.strings)
+  result_count = length(var.fruit)
 }
 variable "fruit" {
   type        = string

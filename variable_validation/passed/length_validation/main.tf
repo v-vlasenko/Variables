@@ -25,7 +25,7 @@ resource "random_password" "password" {
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
 variable "long" {
-  type        = nurbet
+  type        = number
   description = "What length?"
   default = 5
 

@@ -16,6 +16,6 @@ default = [
   }
  validation {
     condition = contains(["cat", "pet"], var.rules[0].name)
-    error_message = "Invalid access, can be either Allow or Deny."
+    error_message = "Invalid name, can be either cat or pet."
   }
 }

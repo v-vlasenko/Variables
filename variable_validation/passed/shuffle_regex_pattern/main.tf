@@ -1,11 +1,12 @@
-resource "random_shuffle" "my_shuffle" {
-  input = var.fruit
-  result_count = length(var.fruit)
-}
-variable "fruit" {
-  type        = list(string)
+resource "random_pet" "pet" {
+ prefix = var.prefix
+ separator = "."
+ length = 1
+ }
+variable "prefix" {
+  type        = string
   description = "What fruit to pick?"
-  default     = ["lemon", "apple", "mango", "banana", "cherry"]
+  default     = "lemon"
 
   validation {
     condition     = can(regex("^(lemon|apple|mango|banana|cherry)$", var.fruit))

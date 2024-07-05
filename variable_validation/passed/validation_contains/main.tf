@@ -16,8 +16,17 @@ variable "prefix" {
     error_message = "Err: prefix is not valid."
   }*/
 
-validation {
+/*validation {
     condition = contains("", var.prefix)
     error_message = "Err: prefix is not valid."
 }
+validation {
+    condition = var.prefix == ""
+    error_message = "Err: prefix is not valid."
+}*/
+validation {
+    condition = length(var.prefix) == 0
+    error_message = "Err: prefix is not valid."
+}
+
 }

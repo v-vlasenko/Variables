@@ -5,7 +5,7 @@ resource "random_shuffle" "my_shuffle" {
 variable "fruit" {
   type        = list(string)
   description = "What fruit to pick?"
-  default     = "apple"
+  default     = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"]
 
   validation {
     condition     = can(regex("^(lemon|apple|mango|banana|cherry)$", var.fruit))

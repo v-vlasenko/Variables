@@ -5,6 +5,7 @@ resource "random_pet" "pet" {
 variable "prefix" {
   type        = string
   description = "What fruit to pick?"
+  default = "lemon"
   length = 5
 
 validation {

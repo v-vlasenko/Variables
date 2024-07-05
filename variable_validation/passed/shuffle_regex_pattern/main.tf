@@ -3,7 +3,7 @@ resource "random_shuffle" "my_shuffle" {
   result_count = length(var.fruit)
 }
 variable "fruit" {
-  type        = string
+  type        = list(string)
   description = "What fruit to pick?"
   default     = "apple"
 

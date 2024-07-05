@@ -9,12 +9,12 @@ variable "prefix" {
   type        = string
   description = "The prefix used for the GCP projects"
 
-  /*validation {
+  validation {
     condition     = can(regex("^w+$", var.prefix))
     # Not allowed due to the use of a variable:
     # error_message = "Invalid value [${var.prefix}]. The prefix value can only contain letters and numbers."
     error_message = "The prefix value can only contain letters and numbers."
-  }*/
+  }
 
   validation {
     condition     = length(var.prefix) > 2 && length(var.prefix) <= 6

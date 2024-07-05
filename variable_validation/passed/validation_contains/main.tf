@@ -6,7 +6,7 @@ resource "random_pet" "pet" {
 variable "prefix" {
   type        = string
   description = "What fruit to pick?"
-  #default     = "appl"
+  default     = "appl"
 
 /* validation {
     condition = contains(

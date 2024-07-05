@@ -6,10 +6,10 @@ resource "random_pet" "pet" {
 variable "prefix" {
   type        = string
   description = "What fruit to pick?"
-  default     = "cat"
+  default     = "appl"
 
   validation {
     condition     = can(regex("^(lemon|apple|mango|banana|cherry)$", var.prefix))
-    error_message = "Invalid fruit selected, only allowed fruits are: 'lemon', 'apple', 'mango', 'banana', 'cherry'. Default 'apple'"
+    error_message = "Invalid fruit selected, only allowed fruits are: 'lemon', 'apple', 'mango', 'banana', 'cherry'. Default 'apple',Invalid fruit selected, only allowed fruits are: 'lemon', 'apple', 'mango', 'banana', 'cherry'. Default 'apple'"
   }
 }

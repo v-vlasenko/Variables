@@ -1,6 +1,6 @@
 variable "timestamp" {
   type        = string
-default = "02 Jan 2018"
+  default = "2018-01-02T23:12:01Z"
 
   validation {
     # formatdate fails if the second argument is not a valid timestamp

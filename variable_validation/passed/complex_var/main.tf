@@ -2,6 +2,11 @@
 variable "magic_animals_list" {
   type    = list(string)
   default = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"]
+
+  validation {
+    condition = contains(["cat"], var.magic_animals_list)
+    error_message = "Invalid object, cat is not listed in the default list("
+  }
 }
 #In this example, the magic_animals variable is a list of objects. Each object represents a magic animal and contains attributes such as name, power, element, and description. The default value provides a list of four magic animals with their respective attributes.
 variable "magic_animals" {
@@ -38,7 +43,7 @@ variable "magic_animals" {
     }
 
   validation {
-    condition = contains(["cat", "pet"], var.magic_animals_list[0].name)
+    condition = contains(["cat", "pet"], var.magic_animals[0].name)
     error_message = "Invalid object, name can be unicorn(set by default configuration for first object in the template)."
   }
   ]

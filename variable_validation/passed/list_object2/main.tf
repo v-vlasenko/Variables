@@ -32,7 +32,7 @@ variable "magic_animals" {
     }
   ]
   validation {
-    condition = contains(["cat", "pet"], var.magic_animals[0].name)
+    condition = contains(["cat", "unicorn"], var.magic_animals[0].name)
     error_message = "Invalid object, name can be unicorn(set by default configuration for first object in the template)."
   }
 }

@@ -4,7 +4,7 @@ variable "magic_animals_list" {
   default = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"]
 
   validation {
-    condition = contains(["cat"], var.magic_animals_list)
+    condition = contains(["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"], var.magic_animals_list)
     error_message = "Invalid object, cat is not listed in the default list("
   }
 }

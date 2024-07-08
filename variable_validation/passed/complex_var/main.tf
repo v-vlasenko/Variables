@@ -1,12 +1,12 @@
 #In this example, the magic_animals_list variable is defined as a list of strings representing magic animals. The resulting list will be ["unicorn", "dragon", "phoenix", "griffin"].
 variable "magic_animals_list" {
   type    = list(string)
-  default = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"]
+  #default = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"]
 
- /* validation {
+validation {
     condition = alltrue([for magic_animal in var.magic_animals_list : contains(["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"], magic_animal)])
     error_message = "Some animal is not listed in default values"
-  }*/
+  }
 }
 #In this example, the magic_animals variable is a list of objects. Each object represents a magic animal and contains attributes such as name, power, element, and description. The default value provides a list of four magic animals with their respective attributes.
 /*variable "magic_animals" {

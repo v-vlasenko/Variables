@@ -1,6 +1,6 @@
 variable "magic_animals_set" {
   type    = set(string)
-  sensitive = true
+  #sensitive = true
   default = ["unicorn№", "dragon", "phoenix", "griffin", "black cat"]
 
   validation {

@@ -5,7 +5,7 @@ variable "mymap" {
 
   validation {
     condition = alltrue(
-       [for obj in keys(var.mymap) : regex("^my", obj) == "my_key"]
+       [for obj in keys(var.mymap) : regex("my[a-z]+", obj) == "my_key"]
     )
     error_message = "Each map key should include key string."
   }

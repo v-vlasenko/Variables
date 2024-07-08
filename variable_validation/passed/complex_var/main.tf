@@ -91,7 +91,7 @@ variable "only_one_optional_key" {
     })
 
     default = {
-        cidr = "10.0.0.0/16"
+        cidrs = "10.0.0.0/16"
         name = "test"
     }
 

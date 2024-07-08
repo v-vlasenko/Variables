@@ -1,7 +1,7 @@
 variable "magic_animals_set" {
   type    = set(string)
   #sensitive = true
-  default = ["unicorn№", "dragon", "phoenix", "griffin", "black cat"]
+  default = ["aaaaa", "dragon", "phoenix", "griffin", "black cat"]
 
   validation {
     condition     = can(regex("^[a-z]$", var.magic_animals_set[0]))

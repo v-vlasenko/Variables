@@ -1,5 +1,6 @@
 variable "timestamp" {
   type        = string
+default = "dana10"
 
   validation {
     # formatdate fails if the second argument is not a valid timestamp

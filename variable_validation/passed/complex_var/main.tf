@@ -4,7 +4,7 @@ variable "magic_animals_list" {
   #default = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"]
 
 validation {
-    condition = alltrue([true]/*[for magic_animal in var.magic_animals_list : contains(["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"], magic_animal)]*/)
+    condition = alltrue([for m in ["unicorn"]/*var.magic_animals_list*/ : contains(["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"], m)])
     error_message = "Some animal is not listed in default values"
   }
 }

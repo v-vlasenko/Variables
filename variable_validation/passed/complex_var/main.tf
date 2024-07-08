@@ -20,7 +20,7 @@ validation {
 }
 
 
-#In this example, the magic_animals variable is a list of objects. Each object represents a magic animal and contains attributes such as name, power, element, and description. The default value provides a list of four magic animals with their respective attributes.
+/*#In this example, the magic_animals variable is a list of objects. Each object represents a magic animal and contains attributes such as name, power, element, and description. The default value provides a list of four magic animals with their respective attributes.
 variable "magic_animals" {
   type = list(object({
     name       = string
@@ -160,7 +160,7 @@ variable "timestamp" {
   }
 }
 
-  
+  */
 
 
 

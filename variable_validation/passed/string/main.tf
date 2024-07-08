@@ -4,6 +4,6 @@
 
   validation {
     error_message = "Value cannot contain a \"/\"."
-    condition = can(regex("/", var.string_may_not_contain))
+    condition = !can(regex("/", var.string_may_not_contain))
   }
 }

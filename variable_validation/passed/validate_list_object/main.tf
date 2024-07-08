@@ -19,3 +19,11 @@ default = [
     error_message = "Invalid name, can be either cat or pet."
   }
 }
+
+ validation {
+    condition = length([
+      for o in var.rules : true
+      if contains(["Allow", "Deny"], o.access)
+    ]) == length(var.rules)
+    error_message = "All rules must have access of either Allow or Deny."
+  }

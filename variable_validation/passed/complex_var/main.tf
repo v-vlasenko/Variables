@@ -18,11 +18,10 @@ validation {
     error_message = "<helpful error message>"
   }
 }
-/*var.magic_animals_list*/
 
 
 #In this example, the magic_animals variable is a list of objects. Each object represents a magic animal and contains attributes such as name, power, element, and description. The default value provides a list of four magic animals with their respective attributes.
-/*variable "magic_animals" {
+variable "magic_animals" {
   type = list(object({
     name       = string
     power      = string
@@ -158,7 +157,7 @@ variable "timestamp" {
     error_message = "The timestamp argument requires a valid RFC 3339 timestamp."
   }
 }
-*/
+
   
 
 

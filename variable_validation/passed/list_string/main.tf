@@ -3,7 +3,7 @@ variable "magic_animals_list" {
   default = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "dog"]
 
 validation {
-    condition = type(var.magic_animals_list) == "tuple"
+    condition = var.magic_animals_list[0] == "unicorn"
     error_message = "Some animal is not listed in default values"
   }
 /*validation {

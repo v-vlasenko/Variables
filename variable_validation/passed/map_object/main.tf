@@ -11,7 +11,7 @@ variable "mymap" {
   }
 
   #default = [{"key1" = "val1"}]
-  default = {"my_key1" = "val1", "key2" = "val2"}
+  default = [{"my_key1" = "val1", "key2" = "val2"}]
   #default = {"okey1" = "val1", "key2" = "val2"}
   #default = {"ok1" = "val1", "key2" = "val2"}
 }

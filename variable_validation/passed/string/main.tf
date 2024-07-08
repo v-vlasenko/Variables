@@ -1,6 +1,6 @@
  variable "string_may_not_contain" {
   type = string
-  default = "test"
+  default = "test/"
 
   validation {
     error_message = "Value cannot contain a \"/\"."

@@ -40,13 +40,12 @@ variable "magic_animals" {
       power       = "majesty"
       element     = "air"
       description = "A majestic creature with the body of a lion and the head of an eagle."
-    },
-
+    }
+  ]
   validation {
     condition = contains(["cat", "pet"], var.magic_animals[0].name)
     error_message = "Invalid object, name can be unicorn(set by default configuration for first object in the template)."
   }
-  ]
 }
 
 

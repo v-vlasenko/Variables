@@ -8,19 +8,19 @@ variable "prefix" {
   description = "What fruit to pick?"
   default     = "appl"
 
- validation {
+ /*validation {
     condition = contains(
       ["lemon", "cherry", "apple", "banana", "mango"],
       var.prefix
     )
     error_message = "Err: prefix is not valid."
-  }
+  }*/
 
-/*validation {
+validation {
     condition = contains("", var.prefix)
     error_message = "Err: prefix is not valid."
 }
-validation {
+/*validation {
     condition = var.prefix == ""
     error_message = "Err: prefix is not valid."
 }

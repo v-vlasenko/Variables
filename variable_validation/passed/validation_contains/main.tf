@@ -17,7 +17,7 @@ variable "prefix" {
   }*/
 
 validation {
-    condition = contains("", var.prefix)
+    condition = contains([""], var.prefix)
     error_message = "Err: prefix is not valid."
 }
 

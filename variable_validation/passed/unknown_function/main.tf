@@ -10,7 +10,7 @@ type = number
 default = 5
 
   validation {
-    condition     = abs(var.pass_count) > 0
+    condition     = abs(var.pass_count) > 3
     error_message = "bla bla bla"
   }
 }

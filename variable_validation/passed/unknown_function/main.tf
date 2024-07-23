@@ -10,7 +10,7 @@ type = number
 default = 5
 
   validation {
-    condition     = sin(var.pass_count) > 5
+    condition     = sin(var.pass_count) > 0.1
     error_message = "bla bla bla"
   }
 }

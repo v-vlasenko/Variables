@@ -1,5 +1,5 @@
 variable "test" {
-  type = string
+  #type = string
   default = null
   /*validation {
     condition = try(contains(["a", "b", "c"], var.test, true))
@@ -8,7 +8,7 @@ variable "test" {
 
  validation {
     condition = (
-      var.test != "" ?
+      var.test != null ?
       contains(["a", "b", "c"], var.test) :
       true
     )

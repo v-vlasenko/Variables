@@ -4,7 +4,7 @@ variable "nullable" {
 }
 
 output "nullable" {
-  value = null
+  value = {key: null}
 }
 
 variable "non_nullable" {

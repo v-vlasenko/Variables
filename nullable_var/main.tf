@@ -20,7 +20,3 @@ resource "null_resource" "name" {
   }
 }*/
 
-variable "timestamp" {
-  type = string
-  default = timestamp()
-}

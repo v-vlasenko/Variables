@@ -13,11 +13,11 @@ condition = (
       true
     )
  
-    /*condition = (
+    condition = (
       var.test != null ?
       contains(["a", "b", "c"], var.test) :
       true
-    )*/
+    )
     error_message = "test must be one of a, b, c or null"
   }
 }

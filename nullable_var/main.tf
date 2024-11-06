@@ -10,7 +10,7 @@ variable "nullable" {
 
 resource "null_resource" "name" {
   triggers = {
-    trigger = var.nullable
+    time= timestamp()
   }
 }
 

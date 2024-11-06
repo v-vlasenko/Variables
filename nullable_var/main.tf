@@ -4,8 +4,8 @@
 }*/
 
 variable "nullable" {
-  type = number
-  default = null
+  type = string
+  default = "string"
 }
 
 resource "null_resource" "name" {

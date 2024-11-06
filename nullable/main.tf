@@ -4,7 +4,7 @@ variable "nullable" {
 }
 
 output "nullable" {
-  value = var.nullable
+  value = null
 }
 
 variable "non_nullable" {

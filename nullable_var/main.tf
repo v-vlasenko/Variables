@@ -5,7 +5,7 @@
 
 variable "nullable" {
   type = string
-  default = "string"
+  default = null
 }
 
 resource "null_resource" "name" {

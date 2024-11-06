@@ -4,7 +4,7 @@ variable "nullable" {
 }
 
 output "nullable" {
-  value = coalesce(var.nullable, "[null]")
+  value = var.nullable
 }
 
 variable "non_nullable" {
@@ -14,5 +14,5 @@ variable "non_nullable" {
 }
 
 output "non_nullable" {
-  value = coalesce(var.non_nullable, "[null]")
+  value = var.non_nullable
 }

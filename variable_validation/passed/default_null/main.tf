@@ -7,12 +7,12 @@ variable "test" {
     error_message = "test must be one of a, b, c or null"
   }*/
 
-/* validation {
-condition = (
+ validation {
+/*condition = (
       var.test != null ?
       var.test > 5 :
       true
-    )
+    )*/
  
     condition = (
       var.test != null ?
@@ -22,9 +22,4 @@ condition = (
     error_message = "test must be one of a, b, c or null"
   }
 }
-*/
-resource "null_resource" "name" {
-  triggers = {
-    trigger = var.test
-  }
-}
+

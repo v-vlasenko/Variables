@@ -3,7 +3,7 @@ variable "var_name1" {
   type = string
   default  = "default-value"
 }
-resource "null_resource" "name" {
+resource "null_resource" "name1" {
   triggers = {
     trigger = var.var_name1
   }
@@ -13,7 +13,7 @@ variable "var_name2" {
   type = string
   default  = ""
 }
-resource "null_resource" "name" {
+resource "null_resource" "name2" {
   triggers = {
     trigger = var.var_name2
   }
@@ -23,7 +23,7 @@ variable "var_name3" {
   type = string
   default  = "   "
 }
-resource "null_resource" "name" {
+resource "null_resource" "name3" {
   triggers = {
     trigger = var.var_name3
   }
@@ -33,7 +33,7 @@ variable "var_name4" {
  type = string
  default = null
 }
-resource "null_resource" "name" {
+resource "null_resource" "name4" {
   triggers = {
     trigger = var.var_name4
   }
@@ -43,7 +43,7 @@ resource "null_resource" "name" {
 variable "var_name5" {
   type = string
 }
-resource "null_resource" "name" {
+resource "null_resource" "name5" {
   triggers = {
     trigger = var.var_name5
   }

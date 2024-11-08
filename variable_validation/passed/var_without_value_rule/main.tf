@@ -10,7 +10,7 @@ validation {
 variable "prefix2" {
   type        = string
 validation {
-    condition = length(var.prefix) == 0
+    condition = length(var.prefix2) == 0
     error_message = "variable could be saved without value"
 }
 }

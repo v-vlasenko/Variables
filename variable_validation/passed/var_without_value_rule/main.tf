@@ -13,3 +13,4 @@ validation {
     condition = length(var.prefix) == 0
     error_message = "variable could be saved without value"
 }
+}

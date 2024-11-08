@@ -10,8 +10,7 @@ log2 = {my_key: "val2"}
 
   validation {
     condition = alltrue(
-       #[for value in values(var.mymap) : regex("[a-z]+", value.my_key) == "val"]
- [false]
+       [for value in values(var.mymap) : regex("[a-z]+", value.my_key) == "val"]
     )
     error_message = "Each map key should include key string."
   }

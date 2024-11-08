@@ -1,5 +1,5 @@
 variable "magic_animals_boolean" {
-  type    = boolean
+  type    = bool
   default = false
 
 validation {
